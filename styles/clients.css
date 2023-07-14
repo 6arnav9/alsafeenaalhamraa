@@ -1,0 +1,200 @@
+ /* global  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  input,
+  textarea {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+  /* header, navbar tweaks start here  */
+  .header1 {
+    /* display: flex; */
+    position: relative;
+    /* background-color: burlywood; */
+    background: transparent;
+    /* background: #43595F; */
+    z-index: 1002;
+    padding: 1rem;
+  }
+  .stickynav1{
+    position: relative;
+    z-index: 1002;
+    top: 0;
+    width: 100%;
+    /* background-color: transparent; */
+    background-color: #43595F;
+    background-color: #772F37;
+    transition: background-color 0.3s;
+  }
+  
+  .navlink1:link,
+  .navlink1:visited {
+      font-size: 1.5rem;
+      /* color: #43595F; */
+      color: #D5D2D6;
+  
+  }
+  
+  .navlink1 {
+    position: relative; /* Add relative positioning to the navlink */
+  }
+  
+  .navlink1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: #d5d2d6;
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: left; /* Set the origin of the transform */
+    transition: transform 0.3s; /* Add transition property for smooth animation */
+  }
+  
+  .navlink1:hover::after {
+    width: 100%; /* Expand width to 100% on hover */
+    transform: scaleX(1); /* Scale the underline to full width on hover */
+  }
+  /* header, navbar tweaks end here  */
+  
+
+/* clients styling starts here */
+.clients-section {
+    /* padding: 10rem; */
+    height: auto;
+    /* max-height: 92vh; */
+    background-color: #D5D2D6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+.clients-div {
+    background-color: white;
+    padding: 2rem;
+    height: auto;
+    width: 80vw;
+    max-width: 80vw;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    /* margin: 10rem; */
+}
+
+.clients-heading h3{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color:#43595F;
+    color:#772F37;
+    text-shadow: 0.5rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.clients-text p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.clients-images-gallery {
+    width: 80vw;
+    max-width: 80vw;
+    min-width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.client-logo {
+    height: 26.7vw;
+    /* width: 300px; */
+    background-color: white;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items:center;;
+}
+
+.client-logo-1 {
+  height: 4rem;
+}
+
+.client-logo-3 {
+  height: 6rem;
+}
+
+.client-logo-4 {
+  height: 10rem;
+}
+
+.client-logo-7 {
+  height: 9rem;
+}
+
+.client-logo-8 {
+  height: 15rem;
+}
+
+@media (max-width: 914px) {
+  .client-logo-1{
+    height: 3rem;
+  }
+  .client-logo-4 {
+    height: 6rem;
+  }
+
+  .client-logo-6 {
+    height: 3rem;
+  }
+  
+  .client-logo-8 {
+    height: 7rem;
+  }
+
+  .client-logo-9 {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients-images-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .hamburger {
+    color:#D5D2D6;
+  }
+
+  .navlink1:link,
+  .navlink1:visited {
+    color: #D5D2D6;
+  }
+  
+  .navlink1::after {
+    background-color: #772F37;
+  }
+}
+
+
+@media (max-width: 355px) {
+  .client-logo-2 {
+    height: 4rem;
+  }
+  .client-logo-5 {
+    height: 5rem;
+  }
+
+  .client-logo-7 {
+    height: 8rem;
+  }
+}

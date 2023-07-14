@@ -1,0 +1,176 @@
+/* global  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  input,
+  textarea {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+  /* header, navbar tweaks start here  */
+  .header1 {
+    /* display: flex; */
+    position: relative;
+    /* background-color: burlywood; */
+    background: transparent;
+    /* background: #43595F; */
+    z-index: 1002;
+    padding: 1rem;
+  }
+  .stickynav1{
+    position: relative;
+    z-index: 1002;
+    top: 0;
+    width: 100%;
+    /* background-color: transparent; */
+    background-color: #772F37;
+    transition: background-color 0.3s;
+  }
+  
+  .navlink1:link,
+  .navlink1:visited {
+      font-size: 1.5rem;
+      /* color: #43595F; */
+      color: #D5D2D6;
+  
+  }
+  
+  .navlink1 {
+    position: relative; /* Add relative positioning to the navlink */
+  }
+  
+  .navlink1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: #d5d2d6;
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: left; /* Set the origin of the transform */
+    transition: transform 0.3s; /* Add transition property for smooth animation */
+  }
+  
+  .navlink1:hover::after {
+    width: 100%; /* Expand width to 100% on hover */
+    transform: scaleX(1); /* Scale the underline to full width on hover */
+  }
+
+  /* header, navbar tweaks end here  */
+  
+
+/* about us styling starts here */
+.about-section {
+  /* padding: 10rem; */
+  height: auto;
+  /* max-height: 92vh; */
+  background-color: #D5D2D6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0;
+}
+
+.about-div {
+  background-color: white;
+  padding: 2rem;
+  height: auto;
+  width: 80vw;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  /* margin: 10rem; */
+}
+
+.about-heading h3{
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color:#772F37;
+  text-shadow: 0.5rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.about-text p{
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.about-images-gallery {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.about-logo {
+  height: 26.7vw;
+  /* width: 300px; */
+  background-color: white;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.about-logo-settings {
+  /* background-color: white; */
+  width: 100%;
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .about-logo:hover {
+  background-color: #43595F;
+  opacity: 0.5;
+  transition: 0.7s ease-in;
+}
+
+.about-logo-settings.view {
+  font-size: medium;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+} */
+
+
+.about-logo1 {
+  background-image: url(/img/drill.png);
+  background-image: url(/img/drillstock.jpeg);
+}
+
+.about-logo2 {
+  background-image: url(/img/electricaltool.png);
+  background-image: url(/img/switchgearstock.jpeg);
+}
+
+.about-logo3 {
+  background-image: url(/img/shovel.png);
+  background-image: url(/img/shovelstock.jpeg);
+}
+
+@media(max-width: 768px) {
+  .about-images-gallery {
+    grid-template-columns: 1fr;
+  }
+  .hamburger {
+    color:#D5D2D6;
+  }
+  .navlink1:link,
+  .navlink1:visited {
+    color: #D5D2D6;
+  }
+
+  .navlink1::after {
+    background-color: #772F37;
+  }
+}
