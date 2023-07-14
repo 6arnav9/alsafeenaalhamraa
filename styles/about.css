@@ -144,17 +144,17 @@
 
 
 .about-logo1 {
-  background-image: url(/img/drill.png);
-  background-image: url(../img/drillstock.jpeg);
+  /* background-image: url(/img/drill.png); */
+  background-image: url(..about-logo1/img/drillstock.jpeg);
 }
 
 .about-logo2 {
-  background-image: url(/img/electricaltool.png);
+  /* background-image: url(/img/electricaltool.png); */
   background-image: url(../img/switchgearstock.jpeg);
 }
 
 .about-logo3 {
-  background-image: url(/img/shovel.png);
+  /* background-image: url(/img/shovel.png); */
   background-image: url(../img/shovelstock.jpeg);
 }
 
